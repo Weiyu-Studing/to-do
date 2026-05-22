@@ -6,6 +6,7 @@ import Managementnotes from './components/Managementnotes';
 const savedNotes = JSON.parse(localStorage.getItem('noteItems'));
 
 // Reducer handles all changes to the note list  
+// Ex. Adding a note: Expands the original note and merges it with the new note (action.payload) into a new array.
 function noteReducer(state, action) {
   switch (action.type) {
     case 'ADD_NOTE':
