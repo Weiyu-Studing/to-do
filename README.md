@@ -3,12 +3,19 @@
 ## Awesome Features
 
 ✅ Add New Task: Up to 27 characters, write whatever you want to jot down.
+
 ✅ View Tasks: Title + Creation Date, clear and easy to navigate.
+
 ✅ Change Status: Mark completed/to-do with a single tap, super convenient.
+
 ✅ Change Title: Edit directly in-line, no need to jump around.
+
 ✅ Delete Task: One-click deletion of unwanted tasks, leaving no trace.
+
 ✅ Aesthetically Pleasing: Completed (green) / To-do (pink) progress bars, easy to distinguish.
+
 ✅ Excellent Compatibility: Displays perfectly on phones, computers, and tablets.
+
 ✅ Beautiful and Easy to Use: Poppins font is soft, and there are cute react-icons.
 
 ## Technical tidbits:
