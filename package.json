@@ -1,7 +1,7 @@
 {
   "name": "to-do",
   "version": "0.1.0",
-  "homepage": "https://Weiyu-Studing.github.io/to-do",
+  "homepage": "https://Weiyu-Studing.io/to-do",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
