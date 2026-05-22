@@ -4,6 +4,7 @@ function Createnotes({ dispatch, selectedNote, setSelectedNote }) {
   const [inputText, setInputText] = useState('');
 
   // When a note is selected for editing, fill the input with its title
+  // Monitor changes in selectedNote and synchronize externally passed note titles to the input box.
   useEffect(() => {
     if (selectedNote) {
       setInputText(selectedNote.title);
