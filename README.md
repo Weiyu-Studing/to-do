@@ -1,6 +1,6 @@
 # Here comes a visually stunning to-do list made with React! Its clean interface and smooth operation help you organize your daily tasks perfectly.
 
-Awesome Features
+## Awesome Features
 
 ✅ Add New Task: Up to 27 characters, write whatever you want to jot down.
 ✅ View Tasks: Title + Creation Date, clear and easy to navigate.
