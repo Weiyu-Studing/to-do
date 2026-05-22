@@ -1,3 +1,5 @@
+import { formatDate } from './Timeformat';
+
 function Managementnotes({ noteList, dispatch, setSelectedNote }) {
   return (
     <div className="task-list">
@@ -5,6 +7,9 @@ function Managementnotes({ noteList, dispatch, setSelectedNote }) {
         <div className={`task ${note.done ? 'completed' : ''}`} key={note.id}>
           <div className={`status-bar ${note.done ? 'green' : 'blue'}`}></div>
           <div className="task-text">{note.title}</div>
+          <div className="task-footer">
+            <div className="task-date">{formatDate(note.date)}</div>
+          </div>
         </div>
       ))}
     </div>
