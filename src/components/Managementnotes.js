@@ -1,4 +1,5 @@
-import { formatDate } from './Timeformat';
+import { GoCheckCircle, GoPencil, GoTrash } from 'react-icons/go';
+import { formatDate } from '.';
 
 function Managementnotes({ noteList, dispatch, setSelectedNote }) {
   return (
@@ -7,8 +8,13 @@ function Managementnotes({ noteList, dispatch, setSelectedNote }) {
         <div className={`task ${note.done ? 'completed' : ''}`} key={note.id}>
           <div className={`status-bar ${note.done ? 'green' : 'blue'}`}></div>
           <div className="task-text">{note.title}</div>
-          <div className="task-footer">
+          <div className="task-footer"> 
             <div className="task-date">{formatDate(note.date)}</div>
+            <div className="task-actions">
+              <GoCheckCircle title='Mark as done' onClick={() => dispatch({ type: 'TOGGLE_DONE', payload: note.id })} />
+              <GoPencil title='Edit note' onClick={() => setSelectedNote(note)} />
+              <GoTrash title='Delete note' onClick={() => dispatch({ type: 'REMOVE_NOTE', payload: note.id })} />
+            </div>
           </div>
         </div>
       ))}
