@@ -45,7 +45,7 @@ function Createnotes({ dispatch, selectedNote, setSelectedNote }) {
       <div className="input-wrapper">
         <input
           type="text"
-          placeholder="Enter Your Note"
+          placeholder="Please Enter Your Note"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           maxLength={27}
